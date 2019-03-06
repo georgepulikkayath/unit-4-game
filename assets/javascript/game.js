@@ -124,17 +124,17 @@ $("#hed1").append("<img class='img1' src='assets/images/download1.jpg'/>");
     if((l1<=0)&&(l2<=0))
     {
       alert("you won");
-      ag=$("#rest").html('<button id="reset">Reset</button>');
+      
     }
       chp= $("#rest>div>label").html();
     
       cp=$("#rest>div>input[type='hidden']").val();
       console.log(cp);
     ap=6*i;
-
+      
     
     $( "#rest1" ).html("<p>you attacked for </p>"+ap);
-    $("#rest2").html("<p>the defender attacked for</p>"+cp);
+    $("#rest2").html("<p>the defender attacked you back</p>"+cp);
     st=$("#score1").text();
     console.log(st);
     st=st-cp;
@@ -143,8 +143,7 @@ $("#hed1").append("<img class='img1' src='assets/images/download1.jpg'/>");
     $("#rest>div>label").html(cd);
     i++;
     if(sc1<=0){
-      $("#rest1").html("<p>you failed in the game");
-      $("#rest").append("<button>submit</button");      
+      $("#rest1").html("<p>you failed in the game");      
 
     }
     if(cd<0){
@@ -154,6 +153,6 @@ $("#hed1").append("<img class='img1' src='assets/images/download1.jpg'/>");
     
     
     });
-     
+   
 
 });
